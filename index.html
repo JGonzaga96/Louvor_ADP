@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louvor ADP</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background-color: #ddd;
+            margin-top: 20px;
+        }
+        .calendar div {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header div {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #ffecb3;
+        }
+        .month {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+        }
+        .month-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dep. Música ADP</h1>
+        <nav>
+            <ul>
+                <li><a href="#escala">Escala</a>
+                    <ul>
+                        <li><a href="#repertorio">Repertório</a></li>
+                    </ul>
+                </li>
+                <li><a href="#relatorio">Relatório de Funções</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#indisponibilidade">Indisponibilidade</a></li>
+                <li><a href="#metronomo">Metrônomo</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="escala">
+            <h2>Escala</h2>
+            <div class="month" onclick="toggleMonth('january')">Janeiro</div>
+            <div id="january" class="month-content">
+                <div class="calendar">
+                    <div class="header">Dom</div>
+                    <div class="header">Seg</div>
+                    <div class="header">Ter</div>
+                    <div class="header">Qua</div>
+                    <div class="header">Qui</div>
+                    <div class="header">Sex</div>
+                    <div class="header">Sáb</div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div class="highlight">6</div>
+                    <div class="highlight">7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div class="highlight">13</div>
+                    <div class="highlight">14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div class="highlight">20</div>
+                    <div class="highlight">21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div class="highlight">27</div>
+                    <div class="highlight">28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>31</div>
+                </div>
+            </div>
+            <div class="month" onclick="toggleMonth('february')">Fevereiro</div>
+            <div id="february" class="month-content">
+                <div class="calendar">
+                    <div class="header">Dom</div>
+                    <div class="header">Seg</div>
+                    <div class="header">Ter</div>
+                    <div class="header">Qua</div>
+                    <div class="header">Qui</div>
+                    <div class="header">Sex</div>
+                    <div class="header">Sáb</div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div class="highlight">6</div>
+                    <div class="highlight">7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div class="highlight">13</div>
+                    <div class="highlight">14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div class="highlight">20</div>
+                    <div class="highlight">21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div class="highlight">27</div>
+                    <div class="highlight">28</div>
+                </div>
+            </div>
+            <!-- Adicione mais meses conforme necessário -->
+        </section>
+
+        <section id="repertorio">
+            <h2>Repertório</h2>
+            <ul>
+                <li><a href="link-para-musica-1.html">Música 1</a></li>
+                <li><a href="link-para-musica-2.html">Música 2</a></li>
+                <!-- Adicionar mais links conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="relatorio">
+            <h2>Relatório de Funções</h2>
+            <ul>
+                <li>João - Vocal</li>
+                <li>Claúdio Júlio - Guitarra</li>
+                <li>Jorginho - Teclado</li>
+                <!-- Adicionar mais itens conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="chat">
+            <h2>Chat</h2>
+            <div id="chat-box">
+                <p><strong>João:</strong> Olá, pessoal!</p>
+                <p><strong>Maria:</strong> Oi, João!</p>
+                <!-- Adicionar mais mensagens conforme necessário -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+            <button id="chat-send">Enviar</button>
+        </section>
+
+        <section id="indisponibilidade">
+            <h2>Indisponibilidade</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                <label for="date">Data de Indisponibilidade:</label>
+                <input type="date" id="date" name="date">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="metronomo">
+            <h2>Metrônomo</h2>
+            <button onclick="startMetronome()">Iniciar</button>
+            <button onclick="stopMetronome()">Parar</button>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/link-para-musica" target="_blank">YouTube: Música 1</a></li>
+                <li><a href="https://www.spotify.com/link-para-musica" target="_blank">Spotify: Música 2</a></li>
+                <!-- Adicionar mais links conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <ul>
+                <li>Evento 1 - 01/01/2024</li>
+                <li>Evento 2 - 02/02/2024</li>
+                <!-- Adicionar mais eventos conforme necessário -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Louvor ADP</p>
+    </footer>
+
+    <script>
+        let metronomeInterval;
+
+        function startMetronome() {
+            metronomeInterval = setInterval(() => {
+                console.log("Tick");
+            }, 1000);
+        }
+
+        function stopMetronome() {
+            clearInterval(metronomeInterval);
+        }
+
+        function toggleMonth(monthId) {
+            const monthContent = document.getElementById(monthId);
+            if (monthContent.style.display === "block") {
+                monthContent.style.display = "none";
+            } else {
+                monthContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
